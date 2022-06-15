@@ -1,11 +1,15 @@
 ### Start Backend server
 ```
 cd node_demo_srv
+npm install
 npm start
 ```
 
 ### Start Frontend App
 ```
+cd ..
+cd node_demo
+npm install
 npm run serve
 ```
 
