@@ -41,7 +41,7 @@
     </va-alert>
     <va-divider></va-divider>
     <div style="display: flex; justify-content:center;">
-        <EditForm v-if="showForm" formType="add"/>
+        <EditForm v-if="showForm" formType="add" @reloadTable="reload"/>
     </div>
     <div style="display: flex; justify-content:center;">
         <EditForm v-if="showEdit" :itemData="selectedItems[0]" formType="edit"/>

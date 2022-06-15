@@ -101,11 +101,12 @@ export default defineComponent({
             if(this.formType === "edit"){
                 const res = await axios.post(`http://localhost:3000/symbols/change/${data.id}`,data);
                 console.log(res.data);
+                this.$emit('reloadTable');
             }else if(this.formType === "add"){
                 const res = await axios.post("http://localhost:3000/symbols/add",data);
                 console.log(res.data);
+                this.$emit('reloadTable');
             }
-            this.$parent.reload();
         }
     },
 })
